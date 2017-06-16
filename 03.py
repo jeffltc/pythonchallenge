@@ -1231,13 +1231,22 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 #@}&$[[%]_&$+)$!%{(}$^$}*"""
 
 dic = {}
-dic_order ={}
-i = 0
-        
+answer_string = ""
+answer = ""
+
+# loop string to find all charactors and its fequency
+
 for element in string:
-    i += 1
     if element in dic.keys():
-        dic[element] = dic[element] +1
+        dic[element] += 1
     else:
         dic[element] = 1
-        dic_order[element] = i
+        answer_string+= element # record all charactor type in original order
+
+# find out the unique charactoors
+
+for element in answer_string:
+    if dic[element] == 1:
+        answer+= element
+
+print answer
