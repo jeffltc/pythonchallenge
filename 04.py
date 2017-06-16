@@ -10,7 +10,7 @@ Created on Tue May 30 17:05:56 2017
 
 import re
 
-pattern = re.compile(r'[a-z][A-Z]{3}[a-z][A-Z]{3}[a-z]')
+pattern = re.compile(r'[a-z]{2}[A-Z]{3}[a-z][A-Z]{3}[a-z]{2}')
 
 string = """
 kAewtloYgcFQaJNhHVGxXDiQmzjfcpYbzxlWrVcqsmUbCunkfxZWDZjUZMiGqhRRiUvGmYmvnJIHEmbT
